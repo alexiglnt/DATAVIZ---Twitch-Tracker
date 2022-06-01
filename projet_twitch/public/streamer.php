@@ -1,21 +1,21 @@
 <?php
- // ~/php/tp1/public/cities.php
- // include model
- include __DIR__ . '/../model/streamers.php';
-if(!key_exists('id', $_GET)) {
+// ~/php/tp1/public/cities.php
+// include model
+include __DIR__ . '/../model/streamers.php';
+if (!key_exists('id', $_GET)) {
     page_not_found();
 }
 
 $id = $_GET['id'];
 $streamer = $streamers[$id];
-$streamer_stats=$streamers_stats[$id]["streamer"];
-foreach($streamers_stats[$id] as $v){
- 
+$streamer_stats = $streamers_stats[$id]["streamer"];
+foreach ($streamers_stats[$id] as $v) {
+
     echo $v['datas']['category'];
 };
 
- // include view
- include __DIR__ . '/../view/streamer.php';
+// include view
+include __DIR__ . '/../view/streamer.php';
 
 function page_not_found()
 {
