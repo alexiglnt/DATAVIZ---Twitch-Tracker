@@ -2,7 +2,7 @@
 Tracker for Twitch Streamer
 
 
-CHAREBONNIER Lucas
+CHARBONNIER Lucas
 GALLONET Alexi
 
 Fonction réalisé :
